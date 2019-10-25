@@ -1,0 +1,2 @@
+# domainname.com
+my blog
