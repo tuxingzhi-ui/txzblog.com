@@ -1,5 +1,5 @@
 ---
-title: DataStructure第一章
+title: DataStructure第一, 二章
 author: TXZ from课件
 date: '2019-12-16'
 slug: datastructure
@@ -295,5 +295,239 @@ int MaxSubseqSum4( int List[], int N )
 			ThisSum = 0; /* 则不可能使后面的部分和增大，抛弃之 */
 	} 
 	return MaxSum;
+}
+```
+2-1
+```
+ElementType Average( ElementType S[], int N )
+{ /* 求N个集合元素S[]的平均值 */
+	int i;
+	ElementType Sum = 0;
+
+    for ( i=0; i<N; i++ )
+		Sum += S[i];  /* 将数组元素累加到Sum中 */
+
+    return Sum/N;
+}
+```
+2-2
+```
+ElementType FindKthLargest( ElementType S[], int K )
+{ /* 此为伪代码 */	
+	选取S中的第一个元素e;
+	根据e将集合S（不包含e）分解为大于等于e的元素集合S1和小于e的元素集合S2;
+	if ( |S1| >= K )       return FindKthLargest( S1, K );
+	else if ( |S1| < K-1 ) return FindKthLargest( S2, K-|S1|-1 );
+	else return e;  
+}
+```
+2-3
+```
+ElementType Max( ElementType S[], int N )
+{ /* 求N个集合元素S[]中的最大值 */
+	int i;
+	ElementType CurMax = S[0];
+
+	for ( i=1; i<N; i++ )
+		if ( S[i] > CurMax ) /* 若A[i]比当前最大值还要大 */
+			CurMax = S[i];   /* 则更新当前最大值 */
+	return CurMax;
+}
+```
+2-4
+```
+#include <stdio.h>
+
+int main()
+{
+	union key {
+		int  k;
+		char ch[2];
+	} u;
+	
+	u.k = 258;
+	printf("%d %d\n", u.ch[0],u.ch[1]);
+	
+	return 0;
+}
+```
+2-4-1.h
+```
+/* 单向链表结点的定义 */
+
+typedef struct Node *PtrToNode;
+struct Node {
+	ElementType Data; /* 存储结点数据 */
+	PtrToNode   Next; /* 指向下一个结点的指针 */
+};
+
+/* 结点空间申请 */
+PtrToNode p = (PtrToNode)malloc(sizeof(struct Node));
+
+typedef PtrToNode List; /* 定义单链表类型 */
+```
+2-4-2.h
+```
+/* 双向链表结点的定义 */
+
+typedef struct DNode *PtrToDNode;
+struct DNode {
+	ElementType Data;     /* 存储结点数据 */
+	PtrToDNode  Next;     /* 指向下一个结点的指针 */
+	PtrToDNode  Previous; /* 指向前一个结点的指针 */
+};
+```
+2-5
+```
+List Reverse( List L )
+{ /* 将单链表L逆转 */
+	PtrToNode Old_head, New_head, Temp;
+
+	Old_head = L;    /* 初始化当前旧表头为L */
+	New_head = NULL; /* 初始化逆转后新表头为空 */
+	while ( Old_head )  { /* 当旧表不为空时 */
+		Temp = Old_head->Next;
+		Old_head->Next = New_head;  
+		New_head = Old_head; /* 将当前旧表头逆转为新表头 */
+		Old_head = Temp;     /* 更新旧表头 */
+	}
+	L = New_head; /* 更新L */
+	return L;
+}
+```
+2-6
+```
+int FactorialSum( List L )
+{ /* 求单链表L中所有结点Data的阶乘和 */
+  /* 这里默认所有结点的Data值非负 */
+	int Fact, Sum, i;
+	PtrToNode P = L;
+
+	Sum = 0;
+	while ( P ) {
+		Fact = 1;
+		for ( i=2; i<=P->Data; i++ )
+			Fact *= i;
+		Sum += Fact;
+		P = P->Next;
+	}
+	return Sum;
+}
+```
+2-7
+```
+ElementType Median( ElementType A[], int N )
+{
+	int i, j, MaxPosition;
+	ElementType TmpA;
+
+	for ( i=0; i<N-1; i++ ) {
+		MaxPosition = i;
+		for ( j=i+1; j<N; j++ ) /* 内循环找出最大值的下标MaxPosition */
+			if ( A[j] > A[MaxPosition] )  MaxPosition = j;
+		/* 下面将最大值与待排序序列的第一个元素A[i]交换 */
+		TmpA=A[i];  A[i]=A[MaxPosition];  A[MaxPosition]=TmpA;
+	} /* 排序结束 */
+
+    /* 数组中下标为(N-1)/2位置的元素就是序列中第N/2个元素 */
+	return A[(N-1)/2];  
+}
+```
+2-8
+```
+#include <stdio.h>
+
+void Swap( int X, int Y )
+{ /* 错误的交换函数 */
+	int tmp;	
+	tmp = X; X = Y; Y = tmp;
+} 
+
+int main()
+{
+	int X = 10, Y = 20;
+
+	Swap( X, Y );
+	printf("X = %d, Y = %d", X, Y);
+	
+	return 0;
+}
+```
+2-9
+```
+#include <stdio.h>
+
+void Swap( int *X, int *Y )
+{ /* 正确的交换函数 */
+	int tmp;
+    tmp = *X; *X = *Y; *Y = tmp;
+} 
+
+int main()
+{
+    int X = 10, Y = 20;
+    
+	Swap( &X, &Y );
+	printf("X = %d, Y = %d", X, Y);
+
+	return 0;
+}
+```
+2-10
+```
+int Factorial( int N )
+{
+	if ( N == 0 )
+		return 1;
+	else
+		return N * Factorial(N-1);
+}
+```
+2-11
+```
+void Move( int n, int start, int goal, int temp )
+{
+    if ( n > 1 ) {
+		Move( n-1, start, temp, goal );
+		printf("Move disk %d from %d to %d.\n", n, start, goal);
+		Move( n-1, temp, goal, start );
+	}
+	/* else 当n==1时不需要做任何事 */
+}
+```
+2-12
+```
+void Swap( ElementType *X, ElementType *Y )
+{ /* 交换X和Y两个元素 */
+	ElementType tmp;
+    tmp = *X; *X = *Y; *Y = tmp;
+} 
+
+ElementType FindKthLargest ( ElementType S[], int K, int Left, int Right )
+{  /* 在S[Left]...S[Right]中找第K大元素 */
+	ElementType e = S[Left]; /* 简单取首元素为基准 */
+	int L = Left, R = Right;
+
+	while (1) { /* 将序列中比基准大的移到基准左边，小的移到右边 */
+		while ( (Left<=Right)&&(e <= S[Left]) )  Left++;
+		while ( (Left<Right)&&(e > S[Right]) )  Right--;
+        if ( Left < Right )
+		    Swap ( &S[Left], &S[Right] ) ;
+		else  break;
+	}
+    Swap ( &S[Left-1], &S[L] ); /* 将基准换到两集合之间 */
+	if ( (Left-L-1) >= K ) /* (Left-L-1)代表了集合S1的大小 */
+		return FindKthLargest(S, K, L, Left-2); /* 在集合S1中找 */
+	else if ( (Left-L-1) < K-1 ) 
+		return FindKthLargest(S, K-(Left-L-1)-1, Left, R); /* 在集合S2中找 */
+	else 
+		return e;/* 找到，返回 */
+}
+```
+2-13
+```
+ElementType Median( ElementType S[], int N )
+{   
+	return FindKthLargest(S, (N+1)/2, 0, N-1);
 }
 ```
