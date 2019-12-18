@@ -10,7 +10,7 @@ tags:
   - blogdown
 ---
 1-1
-
+```
 void PrintN ( int N )
 {/* 打印从1到N的全部正整数 */
 	int i;
@@ -18,10 +18,10 @@ void PrintN ( int N )
 		printf("%d\n", i );
 	}
 } 
-
+```
 
 1-2
-
+```
 #include <stdio.h>
 
 /* "void PrintN ( int N )"可使用"1-1.c"或"1-2.c" */
@@ -34,9 +34,9 @@ int main ()
 	PrintN( N );
 	return 0;
 }
-
+```
 1-3
-
+```
 #include <stdio.h>
 
 /* "void PrintN ( int N )"可使用"1-1.c"或"1-2.c" */
@@ -49,9 +49,9 @@ int main ()
 	PrintN( N );
 	return 0;
 }
-
+```
 1-4
-
+```
 double f( int n, double a[], double x )
 {/* 计算阶数为n，系数为a[0]...a[n]的多项式在x点的值 */
 	int i;
@@ -60,9 +60,9 @@ double f( int n, double a[], double x )
 		p += a[i] * pow(x, i);
 	return p;
 }
-
+```
 1-5
-
+```
 double f( int n, double a[], double x )
 {/* 计算阶数为n，系数为a[0]...a[n]的多项式在x点的值 */
 	int i;
@@ -71,9 +71,9 @@ double f( int n, double a[], double x )
 		p = a[i-1] + x * p;
 	return p;
 }
-
+```
 1-6
-
+```
 #include <stdio.h>
 #include <time.h>
 
@@ -93,9 +93,9 @@ int main ()
     /* 其他不在测试范围的处理写在后面，例如输出duration的值 */
 	return 0;
 }
-
+```
 1-7
-
+```
 /* 给定9阶多项式 f(x)=1*x+2*(x^2)+...+9*(x^9) */
 /* 用不同方法计算f(1.1)并且比较运行时间                         */
 
@@ -154,10 +154,10 @@ int main ()
 
 	return 0;
 }
-
+```
 1-8
-
-void SelectionSort ( int List[], int N )
+```
+vid SelectionSort ( int List[], int N )
 { /* 将N个整数List[0]...List[N-1]进行非递减排序 */
 	int i;
 	for ( i=0; i<N; i++ ) {
@@ -168,9 +168,9 @@ void SelectionSort ( int List[], int N )
 		Swap( List[i], List[MinPosition] );
 	}
 }
-
+```
 1-9
-
+```
 int IterativeSum ( int List[], int N )
 { /* 循环求N个整数的和 */
     int i ; /* 执行1步 */
@@ -181,18 +181,18 @@ int IterativeSum ( int List[], int N )
 
 	return Sum;  /* 执行1步 */
 }
-
+```
 1-10
-
+```
 int RecursiveSum ( int List[], int N )
 { /* 递归求N个整数的和 */
 	if ( N )   /* 执行1步 */
 		return (RecursiveSum(List, N-1)+List[N-1]); /* 执行X+2步 */
     return 0;  /* 执行1步 */
 }
-
+```
 1-11
-
+```
 int MaxSubseqSum1( int List[], int N )
 {
 	int i, j, k;
@@ -209,9 +209,9 @@ int MaxSubseqSum1( int List[], int N )
     } /* i循环结束 */
 	return MaxSum;
 }
-
+```
 1-12
-
+```
 int MaxSubseqSum2( int List[], int N )
 {
 	int i, j;
@@ -228,9 +228,9 @@ int MaxSubseqSum2( int List[], int N )
     } /* i循环结束 */
 	return MaxSum;
 }
-
+```
 1-13
-
+```
 int Max3( int A, int B, int C )
 { /* 返回3个整数中的最大值 */
 	return A > B ? A > C ? A : C : B > C ? B : C;
@@ -278,9 +278,9 @@ int MaxSubseqSum3( int List[], int N )
 { /* 保持与前2种算法相同的函数接口 */
 	return DivideAndConquer( List, 0, N-1 );
 }
-
+```
 1-14
-
+```
 int MaxSubseqSum4( int List[], int N )
 {
 	int i;
@@ -296,3 +296,4 @@ int MaxSubseqSum4( int List[], int N )
 	} 
 	return MaxSum;
 }
+```
