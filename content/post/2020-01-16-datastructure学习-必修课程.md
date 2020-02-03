@@ -2,7 +2,7 @@
 title: 小百科
 author: tuxingzhi
 date: '2020-01-16'
-slug: datastructure学习-必修课程
+slug: 小百科
 categories: []
 tags: []
 ---
@@ -29,4 +29,20 @@ tags: []
  > `在进行数据运算时，True为1，false为0`
    - `int`----整数
    - `float`----浮点数（小数）
-4. 
+4. 标识符
+   - 标识符可以由字母，下划线和数字组成
+   - 不能以数字开头
+   - 不能与关键字重名
+   ![](/post/2020-01-16-datastructure学习-必修课程_files/import（关键字）.png)
+5. 比较运算符
+   - ==  
+   - `>=`   
+   - `!=`
+   - <=
+   - `>`
+   - <
+6. 逻辑运算
+   + and
+   + or
+   + not
+7. 
