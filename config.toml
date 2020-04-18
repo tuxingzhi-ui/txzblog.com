@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "XingZhi Tu"
-theme = "hugo-ivy"
+theme = "XingZhi Tu"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
