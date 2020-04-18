@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "XingZhi Tu"
-theme = "XingZhi Tu"
+title = "xingZhi Tu"
+theme = "hugo-ivy"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
@@ -33,7 +33,7 @@ footnotereturnlinkcontents = "↩"
     url = "/index.xml"
 
 [params]
-    description = "A Hugo theme ported from the static site generator Ivy."
+    description = "May you experience the mountains and rivers and find the world worth living.May you go out of your life and return as a teenager."
     footer = "&copy; [Yihui Xie](https://yihui.name) 2017 | [Github](https://github.com/yihui) | [Twitter](https://twitter.com/xieyihui)"
 
   highlightjsVersion = "9.12.0"
