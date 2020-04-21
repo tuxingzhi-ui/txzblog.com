@@ -34,7 +34,7 @@ footnotereturnlinkcontents = "↩"
 
 [params]
     description = "May you experience the mountains and rivers and find the world worth living.  May you go out of your life and return as a teenager."
-    footer = "&copy; [涂兴智]() 2020 | [Github](https://github.com/yihui) | [Twitter](https://twitter.com/xieyihui)"
+    footer = "&copy; [Tu XingZhi](https://tuxingzhi.netlify.app/) 2020 | [Github](https://github.com/yihui) | [Twitter](https://twitter.com/xieyihui)"
 
   highlightjsVersion = "9.12.0"
   highlightjsCDN = "//cdn.bootcss.com"
