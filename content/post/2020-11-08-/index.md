@@ -8,3 +8,6 @@ categories:
 tags:
   - blogdown
 ---
+愿我往后能说能笑随自由
+
+此生干净明亮
