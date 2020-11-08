@@ -1,0 +1,10 @@
+---
+title: 愿我往后能说能笑随自由
+author: 涂兴智
+date: '2020-11-08'
+slug: 此生干净明亮
+categories:
+  - Example
+tags:
+  - blogdown
+---
