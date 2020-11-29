@@ -7,3 +7,5 @@ categories: []
 tags: []
 ---
 ![](/2020-11-29-ohmyzsh/安装ohmyzsh_files/jiejuefangfa.jpg)
+
+![](/2020-11-29-ohmyzsh/安装ohmyzsh_files/jiejuefangfa.png)
