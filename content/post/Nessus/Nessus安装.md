@@ -32,8 +32,5 @@ sudo ./nessusd restart
 ```
 >**初步使用**  
 
-![](/Nessus/Nessus安装_files/Nessus（主机扫描）.png)
-![](/Nessus/Nessus安装_files/Nessus（scan）.png)
-![](/Nessus/Nessus安装_files/Nessus（主机扫描）.png)
 
 **从而进行漏洞扫描**
