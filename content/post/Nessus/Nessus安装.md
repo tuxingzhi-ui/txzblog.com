@@ -31,6 +31,7 @@ cd /Library/Nessus/run/sbin
 sudo ./nessusd restart
 ```
 >**初步使用**  
-
+![Nessus（主机扫描）.png](http://ww1.sinaimg.cn/large/006HO6T7gy1gm6xco2cs1j31ww13uwko.jpg)
+http://ww1.sinaimg.cn/large/006HO6T7gy1gm6xdi4ec1j31xi14g43n.jpg
 
 **从而进行漏洞扫描**
