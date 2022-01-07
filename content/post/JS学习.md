@@ -1,5 +1,5 @@
 ---
-title: vue的基础学习
+title: js学习
 author: txz
 date: '2022-1-07'
 slug: ''
