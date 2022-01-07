@@ -8,3 +8,4 @@ categories:
 tags:
   - Markdown
 ---
+## 安装mysql
