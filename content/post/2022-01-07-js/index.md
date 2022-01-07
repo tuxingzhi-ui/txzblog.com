@@ -1,14 +1,12 @@
 ---
-title: js学习
+title: JS学习
 author: txz
-date: '2022-1-07'
-slug: ''
-categories:
-  - Example
-tags:
-  - blogdown
-  
+date: '2022-01-07'
+slug: js
+categories: []
+tags: []
 ---
+
 
 ### JS<u>学习</u>
 

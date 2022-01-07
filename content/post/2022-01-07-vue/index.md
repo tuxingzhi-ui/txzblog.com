@@ -1,13 +1,12 @@
-
 ---
 title: vue的基础学习
 author: txz
-date: '2022-1-07'
-slug: ''
+date: '2022-01-07'
+slug: vue
 categories:
   - Example
 tags:
-  - blogdown
+  - Markdown
 ---
 
 ### vue的基础学习

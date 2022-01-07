@@ -1,14 +1,14 @@
-
 ---
 title: 安装mysql
 author: txz
-date: '2022-1-07'
-slug: ''
+date: '2022-01-07'
+slug: mysql
 categories:
   - Example
 tags:
-  - blogdown
+  - Markdown
 ---
+
 ## 安装mysql
 
 > 一般端口都是3306,密码和用户根据自己的需要进行创建和设置。
