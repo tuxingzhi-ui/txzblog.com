@@ -1,0 +1,13 @@
+mysql安装：
+端口：3307（3306被占用）
+密码：redhat
+新建了一个用户密码：jgx123
+配置环境变量：
+
+拒绝访问，但密码正确
+解决：https://www.html.cn/softprog/database/39488.html
+找到安装目录下的my.ini修改配置文件
+找不到my.ini 解决方法：https://blog.csdn.net/wm3tcw28/article/details/78942693
+修改的时候提示没有权限：在桌面新建一个TXT文档，将内容修改后复制到目录下，然后修改扩展名（后面能登入了这想法应该是行的）。
+
+成功登入。
