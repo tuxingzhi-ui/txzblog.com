@@ -25,10 +25,10 @@ tags:
   <!--  <button v-on:click="counter&#45;&#45;">-</button>-->
 ```
 
+```
 
-
-``<button v-on:click="add">+</button>``
-``<button v-on:click="sub">-</button>``
+<button v-on:click="add">+</button>
+<button v-on:click="sub">-</button>
 </div>
 
 <script src="../js/vue.js"></script>
@@ -54,7 +54,7 @@ tags:
 </script>
 </body>
 </html>
-
+```
 
 
 - vue里面的MVVM。MVVM是Model-View-ViewModel的简写，看视频讲解
@@ -76,6 +76,7 @@ tags:
 
 - 什么是生命周期，事物诞生到消亡的过程
 vue的生命周期：
+
 + new function()option（内部做了许多事情）  源码的代码，自己写的调用到function。
 希望内部做一个回调（如发送一个网络请求）执行对应的函数（）callhook，挂载之后去操作
 
@@ -83,7 +84,6 @@ vue的生命周期：
 
 模板相关的语法
 mustache（也就是双大括号）语法
-
 
 
 ```
@@ -102,12 +102,6 @@ mustache（也就是双大括号）语法
   </ul>
 </div>
 ```
-
-```
-
-```
-
-
 
 
 ```
@@ -161,11 +155,12 @@ mustache（也就是双大括号）语法
 
 
 
-v-once的使用：
++ v-once的使用：
 后面不需要跟任何指令
-v-html
-<h2 v-html="url"></h2>
-V-cloak,再vue解析之前。div中有此属性。解析之后，就没有了这个属性。
++ v-html
+
+`<h2 v-html="url"></h2>`
++ V-cloak,再vue解析之前。div中有此属性。解析之后，就没有了这个属性。
 settimeout
 ```
 <style>
@@ -177,7 +172,7 @@ settimeout
 
 
 
-
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -190,6 +185,7 @@ settimeout
   <img v-bind:src="imgURL" alt="">
   <a v-bind:href="aHref">打开百度</a>
 </div>
+```
 
 ```
 <script src="../js/vue.js"></script>
@@ -225,6 +221,7 @@ settimeout
   template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
 ```
 
+```
 </div>
 // 定义一个名为 button-counter 的新组件
 Vue.component('button-counter', {
@@ -276,4 +273,4 @@ count: 0
 </div>
 </body>
 </html>
-
+```
