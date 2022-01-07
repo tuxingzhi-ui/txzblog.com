@@ -115,13 +115,12 @@ mustache（也就是双大括号）语法
     }
   })
 </script>
-```
 
 
 
 </body>
 </html>
-
+```
 
 ```
 <!DOCTYPE html>
@@ -201,12 +200,10 @@ settimeout
   })
 </script>
 
-```
-
-
 
 </body>
 </html>
+```
 
 ```
 <!DOCTYPE html>
