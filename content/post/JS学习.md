@@ -1,14 +1,14 @@
 ---
-title: vue.js基础学习
+title: js学习
 author: txz
-date: '2022-01-07'
-slug: vue-js
+date: '2022-1-07'
+slug: ''
 categories:
-  - Hugo
+  - Example
 tags:
-  - Markdown
+  - blogdown
+  
 ---
-
 
 ### JS<u>学习</u>
 
@@ -59,5 +59,4 @@ alert("傻狍子学前端呀")
 - 值类型(基本类型)：字符串（String）、数字(Number)、布尔(Boolean)、对空（Null）、未定义（Undefined）、Symbol。
 
 - 可以使用字符来定义和创建 JavaScript 对象、键值对在 JavaScript 对象通常称为 对象属性。
-
 
