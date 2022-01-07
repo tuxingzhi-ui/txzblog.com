@@ -1,3 +1,15 @@
+
+---
+title: vue的基础学习
+author: txz
+date: '2022-1-07'
+slug: ''
+categories:
+  - Example
+tags:
+  - blogdown
+---
+
 ### vue的基础学习
 
 ```
@@ -46,23 +58,29 @@
 
 
 
-1.vue里面的MVVM。MVVM是Model-View-ViewModel的简写，看视频讲解
-2.创建vue实例的传入的options
-el :
+- vue里面的MVVM。MVVM是Model-View-ViewModel的简写，看视频讲解
+
+- 创建vue实例的传入的options
++ el :
 类型：string|HTMLelement  决定之后会管理哪一个dom
-data：
+
++ data：
 类型：object|function(组件中data必须是一个函数)
 作用：vue实例对应的数据
-methods：
+
++ methods：
 类型：{[key:string]:function}
 作用：定义一些方法，可以在其他地方使用或者再指令中调用。
-3.什么时候吧是称之为方法，什么时候称之为函数。
+
+- 什么时候吧是称之为方法，什么时候称之为函数。
 名称不同。方法和实例对象挂钩的。
-4.什么是生命周期，事物诞生到消亡的过程
+
+- 什么是生命周期，事物诞生到消亡的过程
 vue的生命周期：
-new function()option（内部做了许多事情）  源码的代码，自己写的调用到function。
++ new function()option（内部做了许多事情）  源码的代码，自己写的调用到function。
 希望内部做一个回调（如发送一个网络请求）执行对应的函数（）callhook，挂载之后去操作
-5.init初始化当前的
+
+- init初始化当前的
 
 模板相关的语法
 mustache（也就是双大括号）语法
