@@ -21,6 +21,11 @@ tags:
   Document.write
 
   Console.log
+  
+  
+[![1.png](https://i.postimg.cc/L8VWz13B/1.png)](https://postimg.cc/sMvKz18v)
+
+[![2.png](https://i.postimg.cc/bvJmkFJp/2.png)](https://postimg.cc/rDBGLjxP)
 
   ### 小知识点
 
