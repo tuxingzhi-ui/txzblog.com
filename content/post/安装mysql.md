@@ -1,6 +1,6 @@
 
 ---
-title: 虽有深情难白头
+title: 安装mysql
 author: txz
 date: '2022-1-07'
 slug: ''
