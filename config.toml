@@ -31,7 +31,7 @@ footnotereturnlinkcontents = "↩"
 
 [params]
     description = "May you experience the mountains and rivers and find the world worth living.  May you go out of your life and return as a teenager."
-    footer = "&copy; [Tu Xingzhi]() 2019-2022 | [Github](https://github.com/tuxingzhi-ui) | [Twitte](https://mobile.twitter.com/) | [Netlify](https://www.netlify.com/)"
+    footer = "&copy; [Tu Xingzhi](https://txzblog.netlify.app/) 2019-2022 | [Github](https://github.com/tuxingzhi-ui) | [Twitte](https://mobile.twitter.com/) | [Netlify](https://www.netlify.com/)"
 
 
   highlightjsVersion = "9.12.0"
