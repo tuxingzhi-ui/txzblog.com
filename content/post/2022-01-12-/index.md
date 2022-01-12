@@ -65,5 +65,7 @@ tags: []
 ![](https://s3.bmp.ovh/imgs/2022/01/27d2c1e5df86e935.jpg)
 
 - **看年限，看数据，看时间**再去做题
+- 化除为乘
+![](https://i.bmp.ovh/imgs/2022/01/e742bf83e977c598.jpg)
 
 
