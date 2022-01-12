@@ -1,5 +1,5 @@
 ---
-title: 安装mysql
+title: MySQL安装步骤
 author: txz
 date: '2022-01-07'
 slug: mysql

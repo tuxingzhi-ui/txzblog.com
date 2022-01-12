@@ -1,7 +1,7 @@
 ---
-title: JS学习
+title: JavaScript基础学习
 author: txz
-date: '2022-01-07'
+date: '2022-01-08'
 slug: js
 categories: []
 tags: []

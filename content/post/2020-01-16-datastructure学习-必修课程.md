@@ -1,5 +1,5 @@
 ---
-title: 小百科
+title: 零散小学习
 author: tuxingzhi
 date: '2020-01-16'
 slug: 小百科

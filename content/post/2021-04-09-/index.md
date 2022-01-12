@@ -1,5 +1,5 @@
 ---
-title: 安装黑苹果
+title: 黑苹果的安装
 author: 涂兴智
 date: '2021-04-09'
 slug: ''

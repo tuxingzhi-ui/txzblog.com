@@ -1,5 +1,5 @@
 ---
-title: DataStructure第一, 二章
+title: 数据结构一二章
 author: TXZ from课件
 date: '2019-12-16'
 slug: datastructure

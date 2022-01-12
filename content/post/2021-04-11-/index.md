@@ -1,5 +1,5 @@
 ---
-title: 直击心灵的语言
+title: 你时正是少年意气
 author: 'txz '
 date: '2021-04-11'
 slug: ''

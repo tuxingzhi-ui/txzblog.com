@@ -1,5 +1,5 @@
 ---
-title: 抖音思考
+title: 抖音文段复述
 author: 'txz '
 date: '2021-01-03'
 slug: ''

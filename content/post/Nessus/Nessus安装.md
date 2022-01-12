@@ -1,5 +1,5 @@
 ---
-title: 安装Nessus
+title: Nessus的安装
 author: 涂兴智
 date: '2020-11-03'
 slug: Nessus

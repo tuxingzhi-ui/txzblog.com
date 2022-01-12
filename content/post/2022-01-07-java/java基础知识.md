@@ -1,5 +1,5 @@
 ---
-title: java基础知识
+title: java基础学习
 author: txz
 date: '2022-01-07'
 slug: java

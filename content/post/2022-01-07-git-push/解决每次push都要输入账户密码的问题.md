@@ -1,7 +1,7 @@
 ---
-title: 解决git push每次都输入账号密码的问题
+title: Push重复输密码
 author: txz
-date: '2022-01-07'
+date: '2022-01-06'
 slug: git-push
 categories:
   - Example
