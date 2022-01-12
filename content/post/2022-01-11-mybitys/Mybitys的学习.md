@@ -794,7 +794,6 @@ MapperRegistry：注册绑定我们的Mapper文件；
 
 
 ### 借鉴以下文章：
-
-[1]: https://blog.csdn.net/qq_45304571/article/details/122219273
-[2]: https://blog.csdn.net/li643937579/article/details/109194467
+https://blog.csdn.net/qq_45304571/article/details/122219273
+https://blog.csdn.net/li643937579/article/details/109194467
 
